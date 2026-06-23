@@ -75,7 +75,7 @@ Goals: clean install
 
 Save → Build Now
 
-Step 10: Find the JAR file
+Step 10: Find the JAR file(back run this in instance terminal)
 sudo su - jenkins
 find /var/lib/jenkins/workspace/my-app -name "*.jar"
 
