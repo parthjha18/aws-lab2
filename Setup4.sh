@@ -23,6 +23,37 @@ source ~/.bashrc
 gradle -v
 cd simple-java-maven-app
 gradle init
+
+if asked generate gradle from this --yes
+groovy-2
+generate build using new apis=no
+
+
+now do vi build.gradle
+
+press i to enter insert mode 
+
+Find the plugins { block and add id 'application' inside it:
+plugins {
+    id 'application'
+}
+
+Then add this block anywhere after the plugins block:
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.mycompany.app.App'
+        )
+    }
+}
+
+Press Esc to exit insert mode
+Type :wq and hit Enter to save and quit
+
+
+
+
 gradle build
 java -jar build/libs/my-app-1.0-SNAPSHOT.jar
 gradle clean build
