@@ -50,6 +50,13 @@ echo ""
 
 gradle init
 
+choose 2-application
+then 3- java
+then no
+then 2-groovy
+then 4- JunitJupiter
+then if some api related thing asked-no
+
 echo "Building project..."
 gradle build
 
